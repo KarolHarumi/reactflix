@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Home from './pages/Home';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import CadastroVideo from './pages/cadastro/Video';
 
 function Pagina404 () {
   return(
@@ -16,10 +17,11 @@ function Pagina404 () {
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" component={App} exact></Route>
+      <Route path="/" component={Home} exact></Route>
+      <Route path="/cadastro/video" component={CadastroVideo}></Route> 
       <Route component={Pagina404}></Route> 
     </Switch>
-    <App />
+    <Home />
   </BrowserRouter>,
   document.getElementById('root')
 );

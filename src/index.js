@@ -21,7 +21,6 @@ ReactDOM.render(
       <Route path="/cadastro/video" component={CadastroVideo}></Route> 
       <Route component={Pagina404}></Route> 
     </Switch>
-    <Home />
   </BrowserRouter>,
   document.getElementById('root')
 );

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CadastroVideo from './pages/cadastro/Video';
+import CadastroCategoria from './pages/cadastro/Categoria';
 
 function Pagina404 () {
   return(
@@ -19,6 +20,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/" component={Home} exact></Route>
       <Route path="/cadastro/video" component={CadastroVideo}></Route> 
+      <Route path="/cadastro/categoria" component={CadastroCategoria}></Route> 
       <Route component={Pagina404}></Route> 
     </Switch>
   </BrowserRouter>,
